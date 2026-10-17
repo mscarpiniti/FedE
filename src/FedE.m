@@ -24,7 +24,7 @@
 % FL processes.The Orchestrator_routine and CoWorker_routine 
 % are offered according to the  Platform-as-Service (PaaS) paradigm. 
 %
-clear; close all; fprintf('\n'); clc;
+clear; close all; clc; fprintf('\n');
 %
 %--------------Load the traing/test datasets-------------------------------
 load("../data/FMNIST_MLP_Train.mat","X","Y");
