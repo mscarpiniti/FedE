@@ -14,7 +14,7 @@ All these functionalities are *standing-alone microservices*, which communicate 
 
 
 ## MATLAB requirements
-It is necessary to install the **Parallel Computing Toolbox** of MATLAB. At least version **R2022b** is necessary
+It is necessary to install the **Parallel Computing Toolbox** of MATLAB. At least version **R2022b** is necessary.
 
 To run **FedE**, you can run the main file:
 ```
