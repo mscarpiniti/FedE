@@ -8,6 +8,7 @@ The *Federated learning Emulator* (**FedE**) is a microservice-based SoftWare (S
 3. Machine Learning (ML) model compression at the middleware layer;
 4. customization of the aggregation and local updating schemes featuring the actually implemented Federated Learning (FL) application; and, 
 5. per-CoW partition of the training data, just to name a few.
+
 All these functionalities are *standing-alone microservices*, which communicate through suitably-designed APIs. Since microservices must be, by definition, independently deployable, this allows **FedE** users to build up customized FL emulation environments through the composition of the provided microservices.
 
 **FedE** limits to provide methods to support SPMD parallel programming of distributed-memory process-based codes, whereas it utilizes MPI-based blocking synchronous constructs (like as, for example, `spmdSend`, `spmdReceive`, `spmdBroadcast`, `spmdSendReceive`, `spmdBarrier`) for implementing inter-process communication. To guarantee reliable emulations of real-world multi-node distributed FL applications, we implemented the orchestrator and each coworker as a software process, which is hosted by a dedicated computing core and is equipped with dedicated resources. SPMD programming is used to support inter-process parallelism. 
