@@ -409,8 +409,11 @@ end
 warning('off','all');
 %
 %----Initializing the weight vector of the trained machine model-----------
-load("../data/FedE_trained_MLP1_workspace.mat","init_primal_vec");
-init_primal_vec = double(init_primal_vec);                                                    
+% load("../data/FedE_trained_MLP1_workspace.mat","init_primal_vec");
+% init_primal_vec = double(init_primal_vec);
+% 
+H = [784, 1024, 512, 256, 10];  % MLP1 layer neurons
+init_primal_vec = init_weights(H).';
 %                                             
 %---------------------End weights' initialization-------------------------
 %
